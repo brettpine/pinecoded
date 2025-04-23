@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "MonitorSmartphone",
+    "title": "Fully Responsive Layouts",
+    "description": "Your site will look great on every screen — phones, tablets, laptops and beyond."
+  },
+  {
+    "icon": "Rocket",
+    "title": "Sites for Startups & Local Brands",
+    "description": "From idea to launch — I help you get online with a modern, easy-to-use website."
+  },
+  {
+    "icon": "Palette",
+    "title": "Your Site, Your Style",
+    "description": "I’ll build your site to match your brand — not a cookie-cutter template."
+  },
+  {
+    "icon": "Handshake",
+    "title": "Support When You Need It",
+    "description": "Want to update your site yourself? I’ll build in a simple editor. Prefer to leave it to me? I’m here to help."
+  }
+]
