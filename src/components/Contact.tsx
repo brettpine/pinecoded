@@ -35,11 +35,11 @@ const Contact = () => {
                         <h3 className="text-xl md:text-2xl font-semibold">Feather Us A Line</h3>
                         <hr className="border-t-2 border-dashed border-leaf/50 w-1/4 mx-auto" />
                         <div className="flex flex-col gap-6 mt-4">
-                            <a href="mailto:hello@pinecoded.co.uk" className="flex items-center gap-2 hover:text-leaf/80 transition">
+                            <a href="mailto:brett@pinecoded.co.uk" className="flex items-center gap-2 hover:text-leaf/80 transition">
                                 <Mail className="w-5 h-5" />
-                                hello@pinecoded.co.uk
+                                brett@pinecoded.co.uk
                             </a>
-                            <a href="https://www.linkedin.com/in/brettpine" target="_blank" rel="noopener noreferrer"
+                            <a href="https://www.linkedin.com/company/pinecoded/" target="_blank" rel="noopener noreferrer"
                                className="flex items-center gap-2 hover:text-leaf/80 transition">
                                 <Linkedin className="w-5 h-5" />
                                 LinkedIn
@@ -52,7 +52,7 @@ const Contact = () => {
                     <form
                         ref={formRef}
                         onSubmit={handleSubmit}
-                        action="https://formsubmit.co/hello@pinecoded.co.uk"
+                        action="https://formsubmit.co/brett@pinecoded.co.uk"
                         method="POST"
                         className="bg-leaf/10 p-6 rounded shadow-md flex flex-col gap-4"
                     >

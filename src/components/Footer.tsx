@@ -23,8 +23,8 @@ const Footer = () => {
 
           {/* Footer Content */}
           <div className="relative z-10 flex items-center justify-between px-6 py-8">
-              <a href="mailto:info@pinecoded.co.uk" className="text-md hover:underline hover:text-leaf">
-                  info@pinecoded.co.uk
+              <a href="mailto:brett@pinecoded.co.uk" className="text-md hover:underline hover:text-leaf">
+                  brett@pinecoded.co.uk
               </a>
               <a href="#top" aria-label="Scroll to top">
                   <motion.div
