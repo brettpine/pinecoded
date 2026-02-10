@@ -32,5 +32,67 @@
     ],
     "siteUrl": "https://brettpine.co.uk/",
     "codeUrl": "https://github.com/brettpine/bretts-portfolio"
+  },
+  {
+    "id": "4",
+    "title": "Car Wash Dilution Calculator",
+    "summary": "A calculator for working out correct product-to-water ratios for car detailing solutions.",
+    "images": [
+      "/assets/projects/cwc-desktop.jpg"
+    ],
+    "siteUrl": "https://car-mix.vercel.app/",
+    "codeUrl": "https://github.com/brettpine/car-mix"
+  },
+  {
+    "id": "5",
+    "title": "Pages By Date",
+    "summary": "A calculator that shows how many pages of a book need to be read each day to finish by a chosen date.",
+    "images": [
+      "/assets/projects/pbd-desktop.jpg"
+    ],
+    "siteUrl": "https://pages-by-date.vercel.app/",
+    "codeUrl": "https://github.com/brettpine/pages-by-date"
+  },
+  {
+    "id": "6",
+    "title": "PineTasks",
+    "summary": "A responsive project-based to-do app for managing tasks, deadlines, progress and generating invoices.",
+    "images": [
+      "/assets/projects/pinetasks-desktop-hero.jpg",
+      "/assets/projects/pinetasks-mobile-hero.jpg",
+      "/assets/projects/pinetasks-folderview.jpg",
+      "/assets/projects/pinetasks-taskview.jpg",
+      "/assets/projects/pinetasks-addtask.jpg",
+      "/assets/projects/pinetasks-opentasks.jpg",
+      "/assets/projects/pinetasks-invoice.jpg"
+    ],
+    "siteUrl": "https://pinetasks.vercel.app/",
+    "codeUrl": "https://github.com/brettpine/project-to-do"
+  },
+  {
+    "id": "7",
+    "title": "Amelia June Photography",
+    "summary": "A portfolio website for a professional photographer.",
+    "images": [
+      "/assets/projects/ajp-desktop.jpg",
+      "/assets/projects/ajp-mobile.jpg",
+      "/assets/projects/ajp-gallery.jpg",
+      "/assets/projects/ajp-services.jpg"
+    ],
+    "siteUrl": "https://ajp-site.vercel.app/",
+    "codeUrl": "https://github.com/brettpine/ajp-site"
+  },
+  {
+    "id": "8",
+    "title": "BPP Detailing",
+    "summary": "A website for a local car detailing business showcasing services and packages.",
+    "images": [
+      "/assets/projects/bpp-desktop-hero.jpg",
+      "/assets/projects/bpp-mobile-hero.jpg",
+      "/assets/projects/bpp-gallery.jpg",
+      "/assets/projects/bpp-faqs.jpg"
+    ],
+    "siteUrl": "https://bpp-detailing.vercel.app/",
+    "codeUrl": "https://github.com/brettpine/bpp-detailing"
   }
 ]
