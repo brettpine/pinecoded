@@ -17,7 +17,7 @@ const Services = () => {
         <SectionWrapper id="services" background="bg-leaf" className="text-pine">
             <SectionHeader title="LeafItToMe" Icon={LeafyGreen} />
 
-            <div className="mt-6 mb-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="mt-6 mb-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-[1680px]">
                 {servicesData.map((service, i) => (
                     <ScrollReveal key={i} delay={i * 0.2}>
                         <ServiceCard

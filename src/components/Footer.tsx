@@ -5,7 +5,7 @@ import ScrollReveal from './ScrollReveal';
 
 const Footer = () => {
   return (
-      <footer className="relative bg-dirt text-cream max-w-[1080px] mx-auto overflow-hidden">
+      <footer className="relative bg-dirt text-cream mx-auto overflow-hidden">
           <ScrollReveal direction="down" delay={0.4} className="relative z-10">
           {/* Left Root */}
           <img

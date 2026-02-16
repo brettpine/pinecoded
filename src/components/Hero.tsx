@@ -1,6 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react';
 import SectionWrapper from "./SectionWrapper";
 
+
 const Hero = () => {
   const logoRef = useRef<HTMLImageElement | null>(null);
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -19,11 +20,12 @@ const Hero = () => {
 
 
   return (
-  <SectionWrapper background="bg-[url('/assets/backgrounds/forest-background-1280w.png')] bg-cover bg-center bg-pine" className="-mt-16  md:min-h-[70vh] lg:min-h-[80vh]">
+  <SectionWrapper background="bg-[url('/assets/backgrounds/forest-bg-upscale.png')] bg-cover bg-center bg-pine" className="-mt-16  md:min-h-[70vh] lg:min-h-[80vh]">
+
     <img
         id="hero-logo"
-        src="/assets/logos/pinecoded-green.png"
-        alt="pine logo"
+        src="/assets/logos/Pinecoded-logo-cream.svg"
+        alt="PineCoded Logo"
         style={{
           transform: `scale(${1 - scrollProgress * 0.5})`,
           opacity: 1 - scrollProgress,

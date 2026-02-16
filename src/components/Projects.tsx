@@ -23,7 +23,7 @@ const Projects = () => {
                 <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />
             )}
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 w-4/5 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 w-4/5 gap-3 max-w-[1080px]">
                 {[...projectData].reverse().map((project, index) => (
                     <ScrollReveal
                         key={project.id}

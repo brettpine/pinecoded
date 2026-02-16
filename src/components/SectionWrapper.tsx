@@ -11,7 +11,7 @@ const SectionWrapper = ({ children, className, background = 'bg-pine', id }: Sec
     return (
         <section
             id={id}
-            className={`${background} max-w-[1080px] mx-auto p-6 shadow-md scroll-mt-16 text-cream min-h-[65vh] ${className}`}>
+            className={`${background} mx-auto p-6 shadow-md scroll-mt-16 text-cream min-h-[65vh] ${className}`}>
             <div className="flex flex-col items-center justify-center">
                 {children}
             </div>

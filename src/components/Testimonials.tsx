@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import SectionWrapper from "./SectionWrapper";
-import {Trees, Quote, LeafyGreen} from "lucide-react";
+import {Trees, Quote, ChevronLeft, ChevronRight} from "lucide-react";
 import testimonials from '../data/testimonials.json';
 import { motion, AnimatePresence } from 'framer-motion';
 import SectionHeader from "./SectionHeader";
@@ -12,11 +12,11 @@ const Testimonials = () => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setDirection(1);
-            setCurrentIndex((prev) => (prev + 1) % testimonials.length);
+            handleNext();
         }, 6000);
+
         return () => clearInterval(interval);
-    }, []);
+    }, [currentIndex]);
 
     const variants = {
         enter: (direction: number) => ({
@@ -33,6 +33,18 @@ const Testimonials = () => {
         })
     };
 
+    const handleNext = () => {
+        setDirection(1);
+        setCurrentIndex((prev) => (prev + 1) % testimonials.length);
+    };
+
+    const handlePrev = () => {
+        setDirection(-1);
+        setCurrentIndex((prev) =>
+            prev === 0 ? testimonials.length - 1 : prev - 1
+        );
+    };
+
     return (
         <SectionWrapper id="testimonials" background="bg-leaf" className="text-pine">
             <SectionHeader title="FeedBackFromTheForest" Icon={Trees} />
@@ -46,6 +58,15 @@ const Testimonials = () => {
                 />
 
                 {/* Testimonial Box */}
+
+                <button
+                    onClick={handlePrev}
+                    className="p-2 bg-pine text-cream rounded-full hover:scale-105 transition"
+                    aria-label="Previous testimonial"
+                >
+                    <ChevronLeft />
+                </button>
+
                 <ScrollReveal
                     variants={{
                         hidden: { opacity: 0, x: 100 },
@@ -90,6 +111,14 @@ const Testimonials = () => {
                         </motion.div>
                     </AnimatePresence>
                 </ScrollReveal>
+
+                <button
+                    onClick={handleNext}
+                    className="p-2 bg-pine text-cream rounded-full hover:scale-105 transition"
+                    aria-label="Next testimonial"
+                >
+                    <ChevronRight />
+                </button>
 
 
 

@@ -59,12 +59,12 @@ const Navbar = () => {
         `${activeSection === section ? 'underline font-bold' : ''} hover:underline`;
 
     return (
-        <nav className={`sticky top-0 max-w-[1080px] m-auto z-50 h-16 transition-all duration-300 ease-in-out ${isScrolled ? 'bg-leaf shadow-md' : 'bg-transparent'}`}>
-            <div className="mx-auto flex items-center justify-between h-full px-4 relative">
+        <nav className={`sticky top-0 m-auto z-50 h-16 transition-all duration-300 ease-in-out ${isScrolled ? 'bg-pine shadow-md' : 'bg-transparent'}`}>
+            <div className="mx-auto flex items-center justify-between h-full px-4 relative max-w-[1680px]">
                 {/* Left Links (Desktop) */}
                 <div className="hidden md:flex gap-4 w-1/3 justify-start">
-                    <a href="#services" className={`text-pine font-mono ${linkClasses('services')}`}>SERVICES</a>
-                    <a href="#projects" className={`text-pine font-mono ${linkClasses('projects')}`}>PORTFOLIO</a>
+                    <a href="#services" className={`text-leaf font-mono ${linkClasses('services')}`}>SERVICES</a>
+                    <a href="#projects" className={`text-leaf font-mono ${linkClasses('projects')}`}>PORTFOLIO</a>
                 </div>
 
                 {/* Center Logo */}
@@ -72,7 +72,7 @@ const Navbar = () => {
                     {isScrolled && (
                         <a href="#top" aria-label="Scroll to top">
                             <img
-                                src="/assets/logos/pinecoded-green.png"
+                                src="/assets/logos/output-onlinepngtools-cream.png"
                                 alt="pine logo"
                                 style={{
                                     transform: `scale(${1.4 - scrollProgress * 0.3})`,
@@ -86,8 +86,8 @@ const Navbar = () => {
 
                 {/* Right Links (Desktop) */}
                 <div className="hidden md:flex gap-4 w-1/3 justify-end">
-                    <a href="#testimonials" className={`text-pine font-mono ${linkClasses('testimonials')}`}>FEEDBACK</a>
-                    <a href="#contact" className={`text-pine font-mono ${linkClasses('contact')}`}>CONTACT</a>
+                    <a href="#testimonials" className={`text-leaf font-mono ${linkClasses('testimonials')}`}>FEEDBACK</a>
+                    <a href="#contact" className={`text-leaf font-mono ${linkClasses('contact')}`}>CONTACT</a>
                 </div>
 
                 {/* Mobile Menu Toggle */}
@@ -102,7 +102,7 @@ const Navbar = () => {
                                     exit={{ y: 10, rotate: 10, opacity: 0 }}
                                     transition={{ duration: 0.4, ease: 'easeOut' }}
                                 >
-                                    <TreePine className="text-pine w-8 h-8" />
+                                    <TreePine className="text-cream w-8 h-8" />
                                 </motion.div>
                             ) : (
                                 <motion.div
