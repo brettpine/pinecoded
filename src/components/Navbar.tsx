@@ -64,8 +64,8 @@ const Navbar = () => {
                 {/* Left Links (Desktop) */}
                 <div className="hidden md:flex gap-4 w-1/3 justify-start">
                     <a href="#services" className={`text-leaf font-mono ${linkClasses('services')}`}>SERVICES</a>
-                    <a href="#projects" className={`text-leaf font-mono ${linkClasses('projects')}`}>PORTFOLIO</a>
                     <a href="#about" className={`text-leaf font-mono ${linkClasses('about')}`}>ABOUT</a>
+                    <a href="#forest" className={`text-leaf font-mono ${linkClasses('forest')}`}>FOREST</a>
                 </div>
 
                 {/* Center Logo */}
@@ -87,7 +87,7 @@ const Navbar = () => {
 
                 {/* Right Links (Desktop) */}
                 <div className="hidden md:flex gap-4 w-1/3 justify-end">
-                    <a href="#forest" className={`text-leaf font-mono ${linkClasses('forest')}`}>FOREST</a>
+                    <a href="#projects" className={`text-leaf font-mono ${linkClasses('projects')}`}>PORTFOLIO</a>
                     <a href="#testimonials" className={`text-leaf font-mono ${linkClasses('testimonials')}`}>FEEDBACK</a>
                     <a href="#contact" className={`text-leaf font-mono ${linkClasses('contact')}`}>CONTACT</a>
                 </div>
@@ -134,9 +134,9 @@ const Navbar = () => {
             >
                 <div className="flex flex-col items-start p-6 gap-6 text-pine font-mono text-lg">
                     <a href="#services" onClick={toggleMobileMenu} className={linkClasses('services')}>SERVICES</a>
-                    <a href="#projects" onClick={toggleMobileMenu} className={linkClasses('projects')}>PORTFOLIO</a>
                     <a href="#about" onClick={toggleMobileMenu} className={linkClasses('about')}>ABOUT</a>
                     <a href="#forest" onClick={toggleMobileMenu} className={linkClasses('forest')}>FOREST</a>
+                    <a href="#projects" onClick={toggleMobileMenu} className={linkClasses('projects')}>PORTFOLIO</a>
                     <a href="#testimonials" onClick={toggleMobileMenu} className={linkClasses('testimonials')}>FEEDBACK</a>
                     <a href="#contact" onClick={toggleMobileMenu} className={linkClasses('contact')}>CONTACT</a>
                 </div>
