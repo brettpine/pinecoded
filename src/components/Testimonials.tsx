@@ -49,7 +49,7 @@ const Testimonials = () => {
         <SectionWrapper id="testimonials" background="bg-leaf" className="text-pine">
             <SectionHeader title="FeedBackFromTheForest" Icon={Trees} />
 
-            <div className="flex items-center justify-center gap-6 mb-6 flex-col sm:flex-row">
+            <div className="p-4 flex items-center justify-center gap-6 mb-6 flex-col sm:flex-row">
                 {/* Left Branch */}
                 <img
                     src="/assets/icons/branch-left.svg"
@@ -93,7 +93,7 @@ const Testimonials = () => {
                             className="w-[90%] sm:w-[400px] md:w-[500px] lg:w-[600px]
                        sm:h-[420px] md:h-[250px]
                        p-6 bg-pine text-cream rounded shadow-md text-center
-                       flex flex-col justify-between"
+                       flex flex-col justify-between mx-auto"
                         >
                             <Quote className="w-8 h-8 mx-auto mb-2" />
                             <p className="italic mb-4 text-lg">"{testimonials[currentIndex].quote}"</p>

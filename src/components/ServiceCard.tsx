@@ -8,14 +8,29 @@ type ServiceCardProps = {
 
 const ServiceCard = ({ icon, title, description }: ServiceCardProps) => {
     return (
-        <div className="p-6 rounded-xl text-center flex flex-col items-center gap-4 hover:shadow-lg hover:scale-[1.1] rounded-lg duration-300 ease-in-out">
-            <div className="w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16">
+        <div className="
+  p-6
+  h-full
+  rounded-xl
+  text-center
+  flex
+  flex-col
+  items-center
+  gap-4
+  bg-pine/90
+  text-leaf
+  hover:-translate-y-2
+  hover:shadow-xl
+  transition-all
+  duration-300
+">
+            <div className="w-12 h-12 md:w-14 md:h-14 lg:w-18 lg:h-18">
                 {React.cloneElement(icon, {
                     className: 'w-full h-full',
                 })}
             </div>
-            <h3 className="text-lg font-semibold text-pine">{title}</h3>
-            <p className="text-sm text-pine">{description}</p>
+            <h3 className="text-lg font-semibold text-leaf">{title}</h3>
+            <p className="text-sm text-leaf">{description}</p>
         </div>
     );
 };
