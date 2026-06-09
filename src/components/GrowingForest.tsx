@@ -31,7 +31,7 @@ const brands = [
 const GrowingForest = () => {
     return (
         <SectionWrapper
-            id="growing-forest"
+            id="forest"
             background="bg-leaf"
             className="text-pine"
         >
@@ -41,7 +41,7 @@ const GrowingForest = () => {
             />
 
             <div className="p-4 max-w-4xl mx-auto text-center mt-12 mb-16">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+                <h2 className="text-3xl md:text-4xl font-bold mb-8">
                     A forest doesn't grow from a single tree.
                 </h2>
 
@@ -59,12 +59,18 @@ const GrowingForest = () => {
                 {/* Fade Right */}
                 <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-leaf to-transparent z-10 pointer-events-none" />
 
-                <div className="w-full max-w-[1200px] mx-auto overflow-hidden">
+                <div className=" w-full
+    max-w-[300px]
+    sm:max-w-[500px]
+    md:max-w-[700px]
+    lg:max-w-[1200px]
+    mx-auto
+    overflow-hidden">
                     <Marquee
                         speed={20}
-                        pauseOnHover
                         gradient={false}
                         autoFill={true}
+                        style={{ width: "100%" }}
                     >
                     {brands.map((brand) => (
                         <div

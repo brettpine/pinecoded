@@ -19,6 +19,15 @@ const Projects = () => {
                 borderColor="border-leaf/50"
             />
 
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Every project starts with a seed.
+            </h2>
+
+            <p className="text-lg max-w-3xl mx-auto text-leaf/80 mb-2">
+                Browse a selection of projects I've designed and developed, from client websites
+                to personal creations, each helping something new grow online.
+            </p>
+
             {selectedProject && (
                 <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />
             )}
