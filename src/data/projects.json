@@ -94,5 +94,20 @@
     ],
     "siteUrl": "https://bpp-detailing.vercel.app/",
     "codeUrl": "https://github.com/brettpine/bpp-detailing"
+  },
+  {
+    "id": "9",
+    "title": "Dance4Dayz",
+    "summary": "A modern website designed to help a growing dance school manage classes, events and enquiries.",
+    "images": [
+      "/assets/projects/d4d-desktop-hero.jpg",
+      "/assets/projects/d4d-mobile-hero.jpg",
+      "/assets/projects/d4d-mobnav.jpg",
+      "/assets/projects/d4d-classes.jpg",
+      "/assets/projects/d4d-holidayclubs.jpg",
+      "/assets/projects/d4d-shows.jpg"
+    ],
+    "siteUrl": "https://dance4dayz.co.uk/",
+    "codeUrl": "https://github.com/brettpine/dance4dayz"
   }
 ]

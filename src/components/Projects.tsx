@@ -9,6 +9,28 @@ import ScrollReveal from "./ScrollReveal";
 
 const Projects = () => {
     const [selectedProject, setSelectedProject] = useState(null);
+    const [showAllProjects, setShowAllProjects] = useState(false);
+    const [hasAnimated, setHasAnimated] = useState(false);
+
+    const projects = [...projectData].reverse();
+
+    const displayedProjects = showAllProjects
+        ? projects
+        : projects.slice(0, 8);
+
+    const handleToggleProjects = () => {
+        if (!showAllProjects) {
+            setHasAnimated(true);
+        }
+
+        if (showAllProjects) {
+            document
+                .getElementById("projects")
+                ?.scrollIntoView({ behavior: "smooth" });
+        }
+
+        setShowAllProjects(!showAllProjects);
+    };
 
     return (
         <SectionWrapper id="projects" className="text-leaf">
@@ -29,41 +51,79 @@ const Projects = () => {
             </p>
 
             {selectedProject && (
-                <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />
+                <ProjectModal
+                    project={selectedProject}
+                    onClose={() => setSelectedProject(null)}
+                />
             )}
 
             <div className="p-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 w-4/5 gap-3 max-w-[1080px]">
-                {[...projectData].reverse().map((project, index) => (
-                    <ScrollReveal
-                        key={project.id}
-                        delay={index * 0.2}
-                        variants={{
-                            hidden: { opacity: 0, scale: 0.9, y: 40, rotate: -5 },
-                            visible: (delay = 0) => ({
-                                opacity: 1,
-                                scale: 1,
-                                y: 0,
-                                rotate: 0,
-                                transition: {
-                                    delay,
-                                    duration: 0.7,
-                                    type: 'spring',
-                                    stiffness: 70,
-                                    damping: 12,
-                                }
-                            }),
-                        }}
-                    >
+                {displayedProjects.map((project, index) =>
+                    showAllProjects || hasAnimated ? (
                         <ProjectCard
+                            key={project.id}
                             id={project.id}
                             image={project.images[0]}
                             title={project.title}
                             images={project.images}
                             onClick={() => setSelectedProject(project)}
                         />
-                    </ScrollReveal>
-                ))}
+                    ) : (
+                        <ScrollReveal
+                            key={project.id}
+                            delay={index * 0.2}
+                            variants={{
+                                hidden: {
+                                    opacity: 0,
+                                    scale: 0.9,
+                                    y: 40,
+                                    rotate: -5,
+                                },
+                                visible: (delay = 0) => ({
+                                    opacity: 1,
+                                    scale: 1,
+                                    y: 0,
+                                    rotate: 0,
+                                    transition: {
+                                        delay,
+                                        duration: 0.7,
+                                        type: 'spring',
+                                        stiffness: 70,
+                                        damping: 12,
+                                    },
+                                }),
+                            }}
+                        >
+                            <ProjectCard
+                                id={project.id}
+                                image={project.images[0]}
+                                title={project.title}
+                                images={project.images}
+                                onClick={() => setSelectedProject(project)}
+                            />
+                        </ScrollReveal>
+                    )
+                )}
             </div>
+
+            {projects.length > 8 && (
+                <button
+                    onClick={handleToggleProjects}
+                    className="
+                        mt-6
+                        bg-leaf
+                        text-pine
+                        px-5
+                        py-2
+                        rounded-md
+                        shadow-md
+                        hover:bg-pine-light
+                        transition
+                    "
+                >
+                    {showAllProjects ? "See Less" : "See More"}
+                </button>
+            )}
         </SectionWrapper>
     );
 };
